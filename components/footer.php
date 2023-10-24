@@ -12,7 +12,7 @@
                  </form>
              </div>
              <div class="box text wow slideInRight">
-                 <h2>Get Connected with Gym</h2>
+                 <h2>Conéctate con el Gimnasio</h2>
                  <p class="title-p">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
                  <div class="info">
                      <ul>

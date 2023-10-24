@@ -1,0 +1,131 @@
+/*Contact Section*/
+.contact{
+	background-color: #222222;
+	padding:80px 0px;
+}
+
+.contact .content{
+	-webkit-display: flex;
+	display: flex;
+}
+
+.contact .content .box{
+	flex:0 0 50%;
+	max-width: 50%;
+	padding: 15px;
+}
+
+.contact .content .form input,
+.contact .content .form textarea{
+ background-color: transparent;
+ border:1px solid #ffffff;
+ color:#ffffff;
+ font-family: 'Open-sans',sans-serif;
+ height: 45px;
+ margin-bottom: 25px;
+ padding:6px 12px;
+ width: 100%;
+}
+.contact .content .form input:focus,
+.contact .content .form textarea:focus{
+ outline: none;
+}
+.contact .content .form input::placeholder,
+.contact .content .form textarea::placeholder{
+	color:#ffffff;
+}
+.contact .content .form textarea{
+	height: 100px;
+}
+
+.contact .content .form button{
+	background-color: #c11325;
+	border:none;
+	border:1px solid transparent;
+	box-shadow: none;
+	color:#ffffff;
+	cursor: pointer;
+	font-size: 15px;
+	height: 45px;
+	outline: none;
+	padding:0px 50px;
+	transition: all .5s ease;
+}
+.contact .content .form button:hover{
+	background-color:transparent; 
+    border-color:#ffffff;
+	color:#ffffff;
+}
+
+.contact .content .text h2{
+    color: #c11325;
+	font-size: 30px;
+    font-weight: 500;
+    padding: 0px 0px 20px;
+}
+.contact .content .text p{
+    color: #ffffff;
+    font-family: 'Open-sans', sans-serif;
+    font-size: 15px;
+    line-height: 20px;
+    margin: 0;
+    padding: 0px 0px 30px;
+}
+
+.contact .content .text .info ul{
+	list-style: none;
+	margin:0;
+	padding:0;
+}
+
+.contact .content .text .info li{
+	color:#ffffff;
+	display: block;
+	font-family: 'Open-Sans',sans-serif;
+	font-size: 15px;
+	letter-spacing: 1px;
+	margin-bottom: 15px;
+	padding-left: 40px;
+	position: relative;
+}
+.contact .content .text .info li span{
+	color:#c11325;
+	display: inline-block;
+	font-size: 20px;
+	left:0px;
+	position: absolute;
+	top:0px;
+}
+.contact .content .text .social {
+	padding-top: 30px;
+}
+.contact .content .text .social a{
+	background-color: #c11325;
+    border:1px solid transparent;	
+    display: inline-block;
+	height: 40px;
+	line-height: 40px;
+    margin-right: 10px;
+	text-align: center;
+    text-decoration: none;
+    transition: all .5s ease;
+	width: 40px;
+} 
+
+.contact .content .text .social a:hover{
+	background-color: transparent;
+    border-color: #ffffff;
+}
+
+.contact .content .text .social a span{
+	color:#ffffff;
+	font-size: 20px;
+}
+
+.contact .content .text .copy{
+	border-top:1px solid #333333;
+	color:#c5c5c5;
+	font-size: 15px;
+	margin-top: 30px;
+	padding-top: 20px;
+}

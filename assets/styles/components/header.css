@@ -1,0 +1,125 @@
+/*Header*/
+
+header{
+	background-color: #000000;
+	left: 0px;
+	padding:15px 15px;
+	position:fixed;
+	top:0px;
+	width: 100%;
+	z-index: 10;
+}
+header .container{
+	align-items: center;
+	-webkit-display: flex;
+	display: flex;
+	justify-content: space-between;
+}
+
+header .logo a{
+	color:#ffffff;
+	font-size: 30px;
+	font-weight: 700;
+	text-decoration: none;
+}
+header .logo a span{
+	color:#c11325;
+}
+header .nav{
+	background-color: #c11325;
+	height: 100%;
+	padding:100px 0px 15px;
+	position: fixed;
+	right:0;
+	top:0; 
+	-webkit-transform: translateX(100%);
+	transform: translateX(100%);
+	-webkit-transition: transform .5s ease;
+    transition: transform .5s ease;
+	width: 280px;
+	z-index: 99;
+}
+header .nav.open{
+	-webkit-transform: translateX(0);
+	transform: translateX(0);
+}
+header .nav ul{
+	list-style: none;
+	margin:0;
+	padding:0px;
+}
+header .nav ul li{
+display: block;
+}
+header .nav ul li a{
+    color:#ffffff;
+    display: block;
+	font-size: 30px;
+	font-weight: 400;
+    padding:10px 30px;
+    position: relative;
+	text-decoration: none;
+}
+header .nav ul li a.active::before{
+	background-color:#000000;
+	content: '';
+	height: 100%;
+	left:0px;
+	opacity:.2;
+	position: absolute;
+	top:0px;
+	-webkit-transition: width .5s ease;
+	transition: width .5s ease;
+	width:100%;
+	z-index: -1;
+}
+header .nav ul li a::before{
+	background-color:#000000;
+	content: '';
+	height: 100%;
+	left:0px;
+	opacity:.2;
+	position: absolute;
+	top:0px;
+	-webkit-transition: width .5s ease;
+	transition: width .5s ease;
+	width:0px;
+	z-index: -1;
+}
+header .nav ul li a:hover::before{
+	width: 100%;
+}
+header .ham-burger{
+	display: inline-block;
+	position: relative;
+	z-index: 100;
+}
+header .ham-burger span{
+	background-color:#ffffff;
+	display: block;
+	height: 3px;
+	margin-bottom:8px;
+	-webkit-transition: transform .5s ease;
+	transition: transform .5s ease;
+	width:30px;
+}
+header .ham-burger span:nth-child(1){
+	transform-origin: left top;
+}
+header .ham-burger span:nth-child(2){
+	transform-origin: left bottom;
+}
+
+header .ham-burger.active span:nth-child(1){
+	-webkit-transform: rotate(45deg) translateY(-6px);
+	transform: rotate(45deg) translateY(-6px);
+}
+header .ham-burger.active span:nth-child(2){
+	-webkit-transform: rotate(-45deg) translateY(6px);
+	transform: rotate(-45deg) translateY(6px)
+}
+
+.container{
+	margin: auto;
+	max-width: 1170px;
+}

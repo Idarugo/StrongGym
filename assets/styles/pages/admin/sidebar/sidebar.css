@@ -1,0 +1,95 @@
+:root {
+    --text-color: #333;
+    --sidebar-color: #f4f4f4;
+  }
+  
+  body {
+    background-color: var(--sidebar-color);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    background-color: var(--sidebar-color);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 10px auto;
+    padding: 20px; /* Reducido el espacio de relleno para dispositivos móviles */
+  }
+  
+  h1 {
+    color: var(--text-color);
+    margin-bottom: 20px;
+    margin-top: 0;
+    text-align: center;
+  }
+  h5 {
+    color: var(--text-color);
+  }
+  
+  li{
+    color: var(--text-color);
+  }
+  
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th, td {
+    color: var(--text-color);
+    padding: 8px; /* Reducido el espacio de relleno para dispositivos móviles */
+    text-align: left;
+  }
+  
+  th {
+    background-color: var(--sidebar-color);
+    color: var(--text-color);
+  }
+  
+  .button, .btn-editar, .btn-eliminar {
+    background-color: #c11325;
+    border: none;
+    border-radius: 4px;
+    color: var(--text-color);
+    cursor: pointer;
+    display: inline-block;
+    font-size: 12px; /* Tamaño de fuente reducido para dispositivos móviles */
+    margin: 4px 2px;
+    padding: 6px 10px; /* Reducido el espacio de relleno para dispositivos móviles */
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .img {
+    background: #dfdfdf;
+    border-radius: 50%;
+    display: block;
+    height: 100px; /* Reducido el tamaño para dispositivos móviles */
+    margin: 0 auto;
+    object-fit: cover;
+    width: 100px; /* Reducido el tamaño para dispositivos móviles */
+  }
+  
+  @media (max-width: 767px) {
+    .container {
+      padding: 10px; /* Reducido aún más el espacio de relleno para dispositivos móviles */
+    }
+  
+    table {
+      font-size: 12px; /* Tamaño de fuente más pequeño para ajustarse mejor en pantallas pequeñas */
+    }
+  
+    .img {
+      height: 60px; /* Tamaño aún más reducido para dispositivos móviles */
+      width: 60px; /* Tamaño aún más reducido para dispositivos móviles */
+    }
+  
+    .button, .btn-editar, .btn-eliminar {
+      font-size: 10px; /* Tamaño de fuente más pequeño para dispositivos móviles */
+      padding: 4px 8px; /* Reducido aún más el espacio de relleno para dispositivos móviles */
+    }
+  }
+  
